@@ -25,6 +25,6 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{secrets.DOCKER_USERNAME}}/simplewhale:latest/sliit-2022-test:${{ github.sha }}
+        tags: ${{secrets.DOCKER_USERNAME}}/sliit-2022-test:${{ github.sha }}
     # - name: Build the Docker image
     #  run: docker build . --file Dockerfile --tag my-image-name:${{ github.sha }}
